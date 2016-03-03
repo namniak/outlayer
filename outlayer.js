@@ -623,14 +623,14 @@ proto.onresize = function() {
   this.resize();
 };
 
-utils.debounceMethod( Outlayer, 'onresize', 100 );
+//utils.debounceMethod( Outlayer, 'onresize', 100 );
 
 proto.resize = function() {
   // don't trigger if size did not change
   // or if resize was unbound. See #9
-  if ( !this.isResizeBound || !this.needsResizeLayout() ) {
-    return;
-  }
+  //if ( !this.isResizeBound || !this.needsResizeLayout() ) {
+    //return;
+  //}
 
   this.layout();
 };
